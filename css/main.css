@@ -57,13 +57,33 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding: 0px 15px;
   margin: 0 auto;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 
-.section {
-  padding: 94px 0px;
+.section-feature {
+  padding: 60px 0px;
+}
+@media screen and (min-width: 1200px) {
+  .section-feature {
+    padding: 94px 0px;
+  }
 }
 
 .header-info {
@@ -147,12 +167,34 @@ body {
 }
 
 .feature {
-  display: flex;
   gap: 30px;
   /* Иконки Переваг */
 }
+@media screen and (min-width: 768px) {
+  .feature {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .feature {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
 .feature__item {
-  flex-basis: calc(25% - 30px);
+  width: 100%;
+  display: block;
+}
+@media screen and (min-width: 1200px) {
+  .feature__item {
+    flex-basis: calc(25% - 30px);
+  }
+}
+@media screen and (min-width: 768px) {
+  .feature__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
 }
 .feature__title {
   color: var(--title-text-color);
@@ -161,6 +203,7 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
+  text-align: center;
 }
 .feature__text {
   color: var(--primary-text-color);
@@ -168,9 +211,9 @@ body {
   font-size: 14px;
   line-height: 1.71;
   margin-top: 10px;
+  margin-bottom: 30px;
 }
 .feature__svg {
-  width: 270px;
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
@@ -178,6 +221,11 @@ body {
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .feature__svg {
+    width: 270px;
+  }
 }
 
 .navigation-list {

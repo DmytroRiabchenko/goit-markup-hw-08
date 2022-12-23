@@ -1,8 +1,24 @@
 .feature {
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
   gap: 30px;
   &__item {
-    flex-basis: calc(100% / 4 - 30px);
+    width: 100%;
+    display: block;
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc(100% / 4 - 30px);
+    }
+
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 30px) / 2);
+    }
   }
 
   &__title {
@@ -13,6 +29,8 @@
     line-height: 1.14;
     text-transform: uppercase;
     margin-bottom: 10px;
+
+    text-align: center;
   }
 
   &__text {
@@ -23,12 +41,15 @@
     line-height: 1.71;
 
     margin-top: 10px;
+    margin-bottom: 30px;
   }
 
   /* Иконки Переваг */
 
   &__svg {
-    width: 270px;
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
     height: 120px;
 
     background: #f5f4fa;
