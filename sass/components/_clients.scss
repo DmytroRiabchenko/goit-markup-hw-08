@@ -1,6 +1,9 @@
 .clients {
   font-weight: 700;
-  font-size: 36px;
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+  }
+  font-size: 28px;
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
@@ -8,10 +11,18 @@
   color: #212121;
 
   margin-bottom: 50px;
+  margin-top: 60px;
   &__svg {
     box-sizing: border-box;
 
-    width: 170px;
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+      height: 92px;
+    }
+    @media screen and (min-width: 768px) {
+      width: auto;
+    }
+    width: 210px;
     height: 92px;
 
     border: 1px solid #afb1b8;
@@ -28,9 +39,37 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    flex-wrap: wrap;
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+    }
+
+    margin-left: -30px;
   }
-  &__item:not(:last-child) {
-    margin-right: 30px;
+  &__item {
+    // @media screen and (min-width: 1200px) {
+    //   &:not(:last-child) {
+    //     margin-right: 30px;
+    //   }
+    // }
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 90px) / 3);
+    }
+    // @media screen and (min-width: 768px) {
+    //   height: 92px;
+    //   width: 0;
+    // }
+
+    // @media screen and (min-width: 1200px) {
+    //   flex-basis: calc((100% - 180px) / 6);
+    // }
+    flex-basis: calc((100% - 60px) / 2);
+    margin-bottom: 30px;
+    margin-left: 30px;
+    // &:nth-child(2n) {
+    //   margin-left: 30px;
+    // }
   }
 
   &__svg {
