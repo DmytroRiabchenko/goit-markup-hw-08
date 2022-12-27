@@ -18,7 +18,7 @@
 
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('/images/Header-tabl\ img.jpg');
+      url('/images/Header-tabl-img.jpg');
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       .box {
         background-image: url('/images/Header2xtabl.jpg');
@@ -27,7 +27,7 @@
   }
   @media screen and (min-width: 1200px) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('/images/Header-deks\ img.jpg');
+      url('/images/Header-deks-img.jpg');
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       .box {
         background-image: url('/images/Header2xdesk.jpg');
@@ -35,7 +35,7 @@
     }
   }
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('/images/Header-mob\ img.jpg');
+    url('/images/Header-mob-img.jpg');
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .box {
       background-image: url('/images/Header2xmob.jpg');
