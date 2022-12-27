@@ -44,18 +44,23 @@ img {
 .main-nav {
   display: flex;
   align-items: center;
-  // width: 480px;
-  // height: 60px;
+  width: 480px;
+  height: 60px;
 }
-// @media screen and (min-width: 768px) {
-//   .main-nav {
-//     display: flex;
-//     align-items: center;
-//   }
-// }
-// @media screen and (min-width: 1200px) {
-//   .main-nav {
-//     display: flex;
-//     align-items: center;
-//   }
-// }
+@media screen and (min-width: 768px) {
+  .main-nav {
+    width: 768px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-nav {
+    width: 1600px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+  }
+}
