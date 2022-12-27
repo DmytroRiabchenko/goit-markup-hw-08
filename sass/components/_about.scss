@@ -1,4 +1,9 @@
 .about {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -9,7 +14,10 @@
   margin-bottom: 50px;
 
   &__list {
-    display: flex;
+    display: none;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
     flex-wrap: wrap;
   }
   &__item {
