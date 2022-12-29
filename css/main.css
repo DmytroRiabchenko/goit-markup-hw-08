@@ -121,6 +121,18 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .section--no-padding {
+    padding-bottom: 94px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-bottom: 94px;
+  }
+}
+
 .header-info {
   display: none;
   margin-left: auto;
@@ -615,6 +627,12 @@ body {
     font-size: 36px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .clients {
+    margin-top: 0;
+    padding-top: 94px;
+  }
+}
 .clients__svg {
   box-sizing: border-box;
   width: auto;
@@ -654,6 +672,11 @@ body {
   margin-bottom: 30px;
   margin-left: 30px;
 }
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    margin-bottom: 64px;
+  }
+}
 @media screen and (min-width: 768px) {
   .clients__item {
     flex-basis: calc((100% - 90px) / 3);
@@ -677,7 +700,12 @@ body {
 }
 @media screen and (min-width: 768px) {
   .footer {
-    padding: 60px 0 60px 0;
+    padding: 0 0 60px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding: 0;
   }
 }
 .footer__socials {
@@ -1345,6 +1373,10 @@ label.modal__checkbox-text {
 .mobile-menu .container {
   display: block;
   height: 100%;
+}
+.mobile-menu .is-hidden {
+  left: -100px;
+  right: auto;
 }
 
 .menu-close {

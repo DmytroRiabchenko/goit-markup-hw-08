@@ -60,6 +60,11 @@
     display: block;
     height: 100%;
   }
+
+  .is-hidden {
+    left: -100px;
+    right: auto;
+  }
 }
 .menu-close {
   top: 15px;
