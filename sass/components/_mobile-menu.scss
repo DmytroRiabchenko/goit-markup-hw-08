@@ -123,9 +123,9 @@
 .mobile-link-info {
   margin-left: 40px;
 }
-// .mob-header-info {
-//   margin-top: 306px;
-// }
+.mob-header-info {
+  margin-top: 306px;
+}
 .mob-header-info__items:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -199,5 +199,5 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  justify-content: space-between;
+  // justify-content: space-between;
 }
