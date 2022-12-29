@@ -1419,7 +1419,7 @@ label.modal__checkbox-text {
   margin-left: 40px;
 }
 
-.navigation-list__link--current {
+.mob-navigation-list__link--current {
   color: #2196f3;
 }
 
