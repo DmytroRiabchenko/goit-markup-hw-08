@@ -1330,6 +1330,7 @@ label.modal__checkbox-text {
   left: 0px;
   right: 0px;
   padding: 21px 0;
+  transition: left 250ms, visibility 250ms;
 }
 @media screen and (min-width: 1200px) {
   .mobile-menu {
@@ -1363,6 +1364,11 @@ label.modal__checkbox-text {
   outline: none;
 }
 
+.menu-close:hover,
+.menu-close:focus {
+  color: #2196f3;
+}
+
 .mob-navigation-list__item:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -1381,12 +1387,12 @@ label.modal__checkbox-text {
   margin-left: 40px;
 }
 
-.mobile-link-info {
-  margin-left: 40px;
+.navigation-list__link--current {
+  color: #2196f3;
 }
 
-.mob-header-info {
-  margin-top: 306px;
+.mobile-link-info {
+  margin-left: 40px;
 }
 
 .mob-header-info__items:not(:last-child) {
@@ -1453,6 +1459,13 @@ label.modal__checkbox-text {
   height: 22px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   transform: rotate(90deg);
+}
+
+.menu-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
 }
 
 /* вторичный основоного текста #212121 */
